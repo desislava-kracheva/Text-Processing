@@ -1,4 +1,4 @@
-function solve(word, text){
+function solveForSecondTime(word, text){
 
     let arr = text.split(' ').map(x=> x.toLowerCase());
 
@@ -7,18 +7,20 @@ if(line === word.toLowerCase()){
 
     console.log(line);
     break;
-}  else {
+}  
 
-    console.log(`${word} not found!`);
-}
+    }
 
+    if(!arr.includes(word)){
+
+        console.log(`${word} not found!`);
     }
 
 }
 
-solve('javascript',
+solveForSecondTime('javascript',
 'JavaScript is the best programming language'
 )
-solve('python',
+solveForSecondTime('python',
 'JavaScript is the best programming language'
 )
